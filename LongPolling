@@ -12,6 +12,7 @@ app.use(cors());
 
 app.get('/api/messages', async (req, res) => {
   // Simulate long delay (e.g., wait for new message)
+  // you can also check what was the last data, if not same only send data
   setTimeout(() => {
     const message = {
       timestamp: new Date().toISOString(),
